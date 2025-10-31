@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthMinder - Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="logo.png" alt="HealthMinder Logo">
+            <h1>Join HealthMinder</h1>
+            <p>Create your health companion account</p>
+        </div>
+        <form id="signup-form">
+            <div class="form-group">
+                <label for="username">Username *</label>
+                <input type="text" id="username" placeholder="Choose a username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password *</label>
+                <input type="password" id="password" placeholder="Create a password" required>
+            </div>
+            <div class="form-group-inline">
+                <div class="form-group">
+                    <label for="height">Height (cm)</label>
+                    <input type="number" id="height" placeholder="e.g., 170">
+                </div>
+                <div class="form-group">
+                    <label for="weight">Weight (kg)</label>
+                    <input type="number" id="weight" placeholder="e.g., 70">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="allergies">Allergies</label>
+                <textarea id="allergies" placeholder="List any allergies (e.g., penicillin, peanuts)"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="medical-conditions">Medical Conditions</label>
+                <textarea id="medical-conditions" placeholder="List any medical conditions (e.g., diabetes, hypertension)"></textarea>
+            </div>
+            <button type="submit">Create Account</button>
+        </form>
+        <p class="login-link">Already have an account? <a href="/login">Login here</a></p>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>
